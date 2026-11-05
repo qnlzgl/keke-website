@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>[hidden]{display:none!important}img{max-width:100%}body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>Ketong Liu</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Ketong Liu (刘珂彤) — brand & content marketer and documentary photographer. Kling AI, NetEase Youdao, Renmin University of China.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@500;700;900&family=Noto+Serif+SC:wght@300;400;600&display=swap">
+<style>
+/* Layout: an exhibition catalogue. Wide plates and captions with frame codes; work reads as case files; a single ink band for the figures. */
+:root{
+  --paper:#f2f4f4; --sheet:#ffffff; --ink:#14181b; --muted:#5b666c; --rule:#d5dbdd; --band:#14181b; --bandink:#eef1f1;
+  --edge:#b86d14;   /* film-edge amber */
+  --accent:#1b4f66; /* cyanotype blue */
+  --display:"Bricolage Grotesque","Noto Sans SC","PingFang SC","Avenir Next","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4","Noto Serif SC","Songti SC",Georgia,serif;
+  --zhd:"Noto Sans SC","PingFang SC","Hiragino Sans GB",sans-serif;
+  --mono:"IBM Plex Mono","SFMono-Regular",Menlo,monospace;
+  --w:1240px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0f1214;--sheet:#171b1e;--ink:#e9edee;--muted:#9aa6ab;--rule:#2a3135;--band:#1c2226;--bandink:#e9edee;--edge:#e0a04a;--accent:#86c0d6;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0f1214;--sheet:#171b1e;--ink:#e9edee;--muted:#9aa6ab;--rule:#2a3135;--band:#1c2226;--bandink:#e9edee;--edge:#e0a04a;--accent:#86c0d6;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.g{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:var(--w);margin:0 auto}
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible,figure:focus-visible{outline:2px solid var(--edge);outline-offset:3px}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.09em;text-transform:uppercase}
+.zh{display:none}
+html[lang="zh"] .zh{display:revert} html[lang="zh"] .en{display:none}
+h1,h2,h3{text-wrap:balance}
+html[lang="zh"] .sh h2,html[lang="zh"] .case h3,html[lang="zh"] .chap h3,html[lang="zh"] .job h3,html[lang="zh"] .edu h3,html[lang="zh"] .feature h3,html[lang="zh"] .contact h2,html[lang="zh"] .subh{font-family:var(--zhd);letter-spacing:.01em;font-weight:900}
+html[lang="zh"] .case h3,html[lang="zh"] .chap h3,html[lang="zh"] .job h3,html[lang="zh"] .edu h3,html[lang="zh"] .subh{font-weight:700}
+html[lang="zh"] body{line-height:1.8}
+html[lang="zh"] .intro p{font-size:clamp(19px,2vw,23px);line-height:1.7}
+html[lang="zh"] .read a::before{content:"公众号 ↗  "}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+nav .wrap{display:flex;align-items:center;gap:22px;padding-block:13px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:800;font-size:18px;color:var(--ink);text-decoration:none;margin-right:auto;letter-spacing:-.01em}
+.brand small{font-family:var(--body);font-weight:400;color:var(--muted);font-size:14px;margin-left:8px;letter-spacing:.1em}
+nav a.l{color:var(--muted);text-decoration:none;font-family:var(--mono);font-size:12px;letter-spacing:.09em;text-transform:uppercase}
+nav a.l:hover{color:var(--ink)}
+.lang{font-family:var(--mono);font-size:12px;border:1px solid var(--rule);background:transparent;color:var(--ink);border-radius:999px;padding:5px 11px;cursor:pointer}
+@media (max-width:760px){nav a.l{display:none}}
+
+/* hero */
+.hero{padding-block:64px 0}
+.kick{color:var(--edge)}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(56px,13.5vw,196px);line-height:.86;letter-spacing:-.045em;margin:18px 0 0}
+.hero h1 .cn{font-family:var(--body);font-weight:300;font-size:.26em;letter-spacing:.3em;color:var(--muted);vertical-align:top;margin-left:.3em;display:inline-block;transform:translateY(.55em)}
+@media (max-width:640px){.hero h1 .cn{display:block;margin:14px 0 0;transform:none}}
+.plate{margin:44px 0 0;position:relative}
+.plate img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:21/9;object-fit:cover}
+@media (max-width:640px){.plate img{aspect-ratio:4/3}}
+.plate figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;color:var(--muted)}
+.intro{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:48px;padding-block:44px 8px}
+@media (max-width:860px){.intro{grid-template-columns:minmax(0,1fr);gap:28px}}
+.intro p{font-size:clamp(20px,2.2vw,26px);line-height:1.45;font-weight:300;margin:0;max-width:30em;text-wrap:pretty}
+.meta{display:grid;gap:16px;align-content:start}
+.meta div{display:grid;grid-template-columns:8.5em minmax(0,1fr);gap:12px;border-top:1px solid var(--rule);padding-top:10px}
+.meta .mono{color:var(--muted);font-size:11px;padding-top:4px}
+.meta b{font-weight:600}
+
+/* figures band */
+.band{background:var(--band);color:var(--bandink);margin-top:72px}
+.band .wrap{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:24px;padding-block:44px}
+@media (max-width:960px){.band .wrap{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:520px){.band .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fig b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(30px,3.6vw,46px);letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.fig .lbl{display:block;margin-top:10px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;line-height:1.5}
+
+/* sections */
+section{padding-block:96px 0}
+.sh{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:20px 48px;align-items:end;margin-bottom:40px}
+@media (max-width:860px){.sh{grid-template-columns:minmax(0,1fr)}}
+.sh .mono{color:var(--edge);display:block;margin-bottom:12px}
+.sh h2{font-family:var(--display);font-weight:800;font-size:clamp(38px,6vw,76px);line-height:.95;letter-spacing:-.035em;margin:0}
+.sh p{margin:0;color:var(--muted);max-width:34em;text-wrap:pretty}
+
+/* case files */
+.case{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,2fr);gap:20px 48px;padding-block:34px;border-top:1px solid var(--ink)}
+.case:last-child{border-bottom:1px solid var(--ink)}
+@media (max-width:860px){.case{grid-template-columns:minmax(0,1fr)}}
+.case aside{display:grid;gap:12px;align-content:start}
+.case aside .no{font-family:var(--display);font-weight:300;font-size:44px;line-height:1;color:var(--edge);letter-spacing:-.02em}
+.case aside dl{margin:0;display:grid;gap:8px}
+.case aside dt{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.case aside dd{margin:0 0 6px;font-size:15px}
+.case h3{font-family:var(--display);font-weight:700;font-size:clamp(26px,3vw,36px);line-height:1.08;letter-spacing:-.02em;margin:0 0 14px}
+.case p{margin:0 0 12px;max-width:38em}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 16px}
+.tags span{font-family:var(--mono);font-size:11px;letter-spacing:.05em;border:1px solid var(--rule);padding:3px 8px;border-radius:999px;color:var(--muted)}
+.nums{display:flex;flex-wrap:wrap;gap:18px 36px;margin:18px 0 6px}
+.nums b{display:block;font-family:var(--display);font-weight:700;font-size:34px;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums}
+.nums small{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.read{display:flex;flex-direction:column;gap:6px;margin-top:16px}
+.read a{font-size:15px}
+.read a::before{content:"WeChat ↗  ";font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--edge)}
+
+/* photography */
+.chapters{display:grid;gap:80px}
+.chap header{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px 24px;align-items:baseline;border-top:1px solid var(--rule);padding-top:14px;margin-bottom:22px}
+@media (max-width:640px){.chap header{grid-template-columns:minmax(0,1fr)}}
+.chap .rn{font-family:var(--display);font-weight:300;font-size:40px;line-height:1;color:var(--edge)}
+.chap h3{font-family:var(--display);font-weight:700;font-size:clamp(26px,3vw,34px);letter-spacing:-.02em;margin:0}
+.chap h3 small{font-family:var(--body);font-weight:400;font-size:.55em;color:var(--muted);letter-spacing:.1em;margin-left:10px}
+.chap header p{grid-column:1/-1;margin:0;color:var(--muted);max-width:40em}
+.chap header .mono{color:var(--muted)}
+.lead{margin:0 0 10px;cursor:zoom-in;overflow:hidden;background:var(--sheet)}
+.lead img{display:block;width:100%;height:auto;max-width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.lead:hover img{transform:scale(1.015)}
+.just{display:flex;flex-wrap:wrap;gap:10px}
+.just::after{content:"";flex-grow:999}
+.just figure{margin:0;position:relative;cursor:zoom-in;overflow:hidden;background:var(--sheet);flex-basis:calc(var(--r)*230px);flex-grow:var(--r);max-width:100%}
+.just img{display:block;width:100%;height:auto;aspect-ratio:var(--r);object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.just figure:hover img{transform:scale(1.03)}
+.just figcaption,.lead figcaption{position:absolute;left:8px;bottom:6px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.7);opacity:0;transition:opacity .25s}
+.lead{position:relative}
+figure:hover figcaption,figure:focus-visible figcaption{opacity:1}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:20;background:rgba(7,9,11,.96);display:flex;align-items:center;justify-content:center;
+  padding:max(48px,env(safe-area-inset-top,0px)) max(56px,env(safe-area-inset-right,0px)) max(56px,env(safe-area-inset-bottom,0px)) max(56px,env(safe-area-inset-left,0px))}
+.lb img{max-width:100%;max-height:100%;object-fit:contain}
+.lb .cap{position:absolute;left:0;right:0;bottom:max(18px,env(safe-area-inset-bottom,0px));text-align:center;color:#e0a04a;font-family:var(--mono);font-size:12px;letter-spacing:.1em}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;padding:10px 16px;line-height:1;opacity:.85}
+.lb button:hover{opacity:1}
+.lb .x{top:max(8px,env(safe-area-inset-top,0px));right:max(8px,env(safe-area-inset-right,0px))}
+.lb .p{left:max(2px,env(safe-area-inset-left,0px))}.lb .n{right:max(2px,env(safe-area-inset-right,0px))}
+
+/* film & writing */
+.feature{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px 40px;align-items:center;background:var(--sheet);border:1px solid var(--rule);padding:clamp(20px,3vw,36px);margin-bottom:36px}
+@media (max-width:860px){.feature{grid-template-columns:minmax(0,1fr)}}
+.feature img{display:block;width:100%;height:auto;max-width:100%;aspect-ratio:3/2;object-fit:cover}
+.feature h3{font-family:var(--display);font-weight:700;font-size:clamp(24px,2.6vw,32px);letter-spacing:-.02em;line-height:1.1;margin:8px 0 12px}
+.feature p{margin:0 0 14px}
+.feature .mono{color:var(--edge)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:28px 44px}
+.subh{font-family:var(--display);font-weight:700;font-size:20px;margin:0 0 10px;letter-spacing:-.01em}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 16px;padding:13px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.list a{color:var(--ink);text-decoration:none;font-weight:600}
+.list a:hover{color:var(--accent);text-decoration:underline}
+.list .mono{color:var(--muted);font-size:10.5px;white-space:nowrap}
+.list p{grid-column:1/-1;margin:0;color:var(--muted);font-size:15px}
+
+/* experience */
+.xp{display:grid;gap:0}
+.job{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,2fr);gap:12px 48px;padding-block:26px;border-top:1px solid var(--rule)}
+@media (max-width:860px){.job{grid-template-columns:minmax(0,1fr)}}
+.job .when{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--edge)}
+.job h3{font-family:var(--display);font-weight:700;font-size:22px;margin:6px 0 2px;letter-spacing:-.01em}
+.job .role{color:var(--muted);font-size:15px}
+.job ul{margin:0;padding-left:1.1em;display:grid;gap:8px}
+.job li{max-width:44em}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px}
+.edu article{background:var(--sheet);border:1px solid var(--rule);padding:22px}
+.edu .mono{color:var(--edge);font-size:11px}
+.edu h3{font-family:var(--display);font-weight:700;font-size:20px;margin:8px 0 4px;letter-spacing:-.01em;line-height:1.2}
+.edu p{margin:0;color:var(--muted);font-size:15px}
+.edu .gpa{font-family:var(--display);font-weight:700;font-size:28px;color:var(--ink);margin-top:12px;font-variant-numeric:tabular-nums}
+.edu .gpa small{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.06em;margin-left:6px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px 40px;margin-top:44px}
+.skills h4{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:500}
+.skills p{margin:0}
+
+/* contact */
+.contact{padding-block:110px 40px;text-align:left}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px 64px;align-items:end;border-top:1px solid var(--ink);padding-top:28px}
+@media (max-width:860px){.ct{grid-template-columns:minmax(0,1fr)}}
+.contact h2{font-family:var(--display);font-weight:800;font-size:clamp(44px,7vw,96px);letter-spacing:-.04em;line-height:.95;margin:14px 0 16px}
+.ctp{margin:0;color:var(--muted);max-width:28em}
+.cinfo{margin:0;display:grid}
+.cinfo div{display:grid;grid-template-columns:7em minmax(0,1fr);gap:12px;align-items:center;padding-block:14px;border-bottom:1px solid var(--rule)}
+.cinfo div:first-child{border-top:1px solid var(--rule)}
+.cinfo dt{color:var(--muted);font-size:11px}
+.cinfo dd{margin:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;font-size:17px;min-width:0}
+#email{font-family:var(--mono);font-size:16px;user-select:all;overflow-wrap:anywhere}
+.btn{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--rule);background:transparent;color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer}
+.btn:hover{border-color:var(--ink)}
+footer{padding-block:30px 44px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid var(--rule)}
+</style>
+
+</head>
+<body>
+<nav class="g">
+  <div class="wrap">
+    <a class="brand" href="#top">Ketong Liu<small>刘珂彤</small></a>
+    <a class="l" href="#work"><span class="en">Work</span><span class="zh">项目</span></a>
+    <a class="l" href="#photography"><span class="en">Photography</span><span class="zh">摄影</span></a>
+    <a class="l" href="#film"><span class="en">Film &amp; Press</span><span class="zh">视频与发表</span></a>
+    <a class="l" href="#experience"><span class="en">Experience</span><span class="zh">履历</span></a>
+    <a class="l" href="#contact"><span class="en">Contact</span><span class="zh">联系</span></a>
+    <button class="lang" id="lang" type="button" aria-label="Switch language">中文</button>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero g">
+    <div class="wrap">
+      <div class="mono kick"><span class="en">Brand &amp; content marketing — Documentary photography</span><span class="zh">品牌与内容营销 · 纪实摄影</span></div>
+      <h1>Ketong Liu<span class="cn">刘珂彤</span></h1>
+      <figure class="plate">
+        <img src="images/kt_07_field.jpg" alt="Boats and a market stall in a floating village">
+        <figcaption class="mono"><span>KT 07 · <span class="en">Fieldwork</span><span class="zh">田野记录</span></span><span><span class="en">All photographs by Ketong Liu</span><span class="zh">摄影：刘珂彤</span></span></figcaption>
+      </figure>
+      <div class="intro">
+        <p>
+          <span class="en">I make brands legible to the people they want to reach. At Kling AI I helped take an AI video tool to the Cannes Film Market and Seoul; at NetEase Youdao I worked on a campaign that reached 120 million people. Behind both is a habit from journalism school: go and look, then tell it plainly.</span>
+          <span class="zh">我希望让品牌真正被目标受众看懂、记住。在可灵 AI，我参与将一款 AI 视频产品带到戛纳电影市场和首尔；在网易有道，我参与的年度词汇项目全网曝光超过 1.2 亿。新闻学的训练让我养成了一个习惯：先到现场看清楚，再把故事讲明白。</span>
+        </p>
+        <div class="meta">
+          <div><span class="mono"><span class="en">Studying</span><span class="zh">在读</span></span><span><b>Renmin University of China</b><br><span class="en">M.A. Journalism &amp; Communication, 2027</span><span class="zh">新闻与传播硕士 · 2027 届</span></span></div>
+          <div><span class="mono"><span class="en">Recently</span><span class="zh">实习经历</span></span><span><b>Kling AI</b> · Kuaishou<br><b>NetEase Youdao</b></span></div>
+          <div><span class="mono"><span class="en">Languages</span><span class="zh">语言</span></span><span><span class="en">Mandarin (native) · English (IELTS 7.0)</span><span class="zh">中文（母语）· 英语（雅思 7.0）</span></span></div>
+          <div><span class="mono"><span class="en">Based in</span><span class="zh">现居</span></span><span><span class="en">Beijing, China</span><span class="zh">中国北京</span></span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="band g" aria-label="Key figures">
+    <div class="wrap">
+      <div class="fig"><b>120M+</b><span class="lbl"><span class="en">Impressions · Youdao Word of the Year</span><span class="zh">有道年度词汇全网曝光</span></span></div>
+      <div class="fig"><b>12,000+</b><span class="lbl"><span class="en">Submissions · Kling 4K contest</span><span class="zh">可灵 4K 大赛征稿</span></span></div>
+      <div class="fig"><b>4.66M</b><span class="lbl"><span class="en">Impressions · Cannes campaign</span><span class="zh">戛纳项目全网曝光</span></span></div>
+      <div class="fig"><b>116</b><span class="lbl"><span class="en">Posts · Cannes campaign</span><span class="zh">戛纳项目发布内容</span></span></div>
+      <div class="fig"><b>31</b><span class="lbl"><span class="en">Films screened · Seoul</span><span class="zh">首尔海外展映作品</span></span></div>
+      <div class="fig"><b>2,000+</b><span class="lbl"><span class="en">Calendars sold · week one</span><span class="zh">壹句日历首周销量</span></span></div>
+    </div>
+  </div>
+
+  <section id="work" class="g">
+    <div class="wrap">
+      <div class="sh">
+        <div><span class="mono">01 · <span class="en">Work</span><span class="zh">项目</span></span><h2><span class="en">Selected work</span><span class="zh">精选项目</span></h2></div>
+        <p><span class="en">Brand and campaign work from internships at Kling AI and NetEase Youdao, 2025–2026, with the published WeChat articles.</span><span class="zh">2025–2026 年在可灵 AI 与网易有道实习期间参与的品牌项目，附公众号原文。</span></p>
+      </div>
+
+      <article class="case">
+        <aside><div class="no">01</div><dl>
+          <dt><span class="en">Client</span><span class="zh">品牌</span></dt><dd>Kling AI · Kuaishou</dd>
+          <dt><span class="en">Year</span><span class="zh">时间</span></dt><dd>2026</dd>
+          <dt><span class="en">My role</span><span class="zh">我的角色</span></dt><dd><span class="en">Event content, speaker liaison, social channels</span><span class="zh">议题筹备、嘉宾对接、社媒运营</span></dd>
+        </dl></aside>
+        <div>
+          <h3><span class="en">Kling AI at the Cannes Film Market</span><span class="zh">可灵 AI 戛纳论坛</span></h3>
+          <div class="tags"><span>International event</span><span>Social campaign</span><span>WeChat</span></div>
+          <p><span class="en">Kling's official forum at the Cannes Film Market was built to position it as a cinema-grade AI video tool. I prepared forum topics, coordinated resources across partners, handled speaker content and planned the communication sequence from announcement to recap.</span><span class="zh">可灵在戛纳电影市场举办官方论坛，塑造“影视工业级 AI 影像工具”的专业认知。我负责前期议题筹备、跨方资源协调、嘉宾内容对接，并策划从官宣到回顾的传播链路。</span></p>
+          <p><span class="en">The campaign ran across four phases on Kling's official channels: announcement, speaker reveal, work showcase and recap.</span><span class="zh">传播覆盖官方渠道的四个阶段：活动官宣、嘉宾释出、作品展示、活动回顾。</span></p>
+          <div class="nums"><div><b>116</b><small>posts</small></div><div><b>4.66M+</b><small>impressions</small></div><div><b>49K+</b><small>engagements</small></div></div>
+          <div class="read"><a href="https://mp.weixin.qq.com/s/mYBSx0lEuZ7lTURV0Aiu-A" target="_blank" rel="noopener">亮相戛纳｜可灵AI戛纳论坛精彩回顾</a></div>
+        </div>
+      </article>
+
+      <article class="case">
+        <aside><div class="no">02</div><dl>
+          <dt><span class="en">Client</span><span class="zh">品牌</span></dt><dd>Kling AI · Kuaishou</dd>
+          <dt><span class="en">Year</span><span class="zh">时间</span></dt><dd>2026</dd>
+          <dt><span class="en">My role</span><span class="zh">我的角色</span></dt><dd><span class="en">Contest planning, promotion, judging; Seoul ceremony</span><span class="zh">赛事方案、赛制、宣发、评审；首尔颁奖</span></dd>
+        </dl></aside>
+        <div>
+          <h3><span class="en">The 4K Video Creation Contest and a screening in Seoul</span><span class="zh">4K 影像创作大赛与首尔展映</span></h3>
+          <div class="tags"><span>Creator programme</span><span>Event</span><span>Cross-border</span></div>
+          <p><span class="en">A contest built to reach professional filmmakers rather than casual users. I worked on the proposal, contest format, social promotion and judging, then helped bring the winners of three contests to an awards ceremony in Seoul with Chinese and Korean directors, professors, industry media and creators.</span><span class="zh">面向专业影像创作者而非泛用户的赛事。我参与方案撰写、赛制设计、社媒宣发与奖项评审，并协助三大赛事落地首尔颁奖典礼，汇聚中韩影视导演、高校教授、行业媒体与全球创作者。</span></p>
+          <div class="nums"><div><b>12,000+</b><small>submissions</small></div><div><b>31</b><small>winning films screened</small></div><div><b>3</b><small>contests closed in Seoul</small></div></div>
+          <div class="read"><a href="https://mp.weixin.qq.com/s/Ga87oxWiSBrDY6otG727tA" target="_blank" rel="noopener">可灵AI三大创作赛事收官：2026年，年轻创作者都在用AI表达什么？</a></div>
+        </div>
+      </article>
+
+      <article class="case">
+        <aside><div class="no">03</div><dl>
+          <dt><span class="en">Client</span><span class="zh">品牌</span></dt><dd>NetEase Youdao Dictionary</dd>
+          <dt><span class="en">Year</span><span class="zh">时间</span></dt><dd>2025</dd>
+          <dt><span class="en">My role</span><span class="zh">我的角色</span></dt><dd><span class="en">Audience research, creative, KOL, launch content</span><span class="zh">人群分析、创意、KOL、发布内容</span></dd>
+        </dl></aside>
+        <div>
+          <h3><span class="en">Youdao Dictionary Word of the Year 2025</span><span class="zh">有道词典 2025 年度词汇</span></h3>
+          <div class="tags"><span>Annual campaign</span><span>Gen Z</span><span>KOL</span><span>WeChat</span></div>
+          <p><span class="en">Youdao Dictionary's year-end word release, paired with a look back at every Word of the Year since 2011 and a personalised year-in-review for users. Creative was shaped for Gen-Z learners and amplified through social channels and KOL partners.</span><span class="zh">年度词汇发布，同时回顾 2011 年以来的历年词汇，并推出用户个人年终总结。创意面向 Z 世代学习者，通过社媒与 KOL 资源放大传播。</span></p>
+          <div class="nums"><div><b>120M+</b><small>impressions</small></div></div>
+          <div class="read">
+            <a href="https://mp.weixin.qq.com/s/shaGLnW0jm7T6Fr4UKqYnQ" target="_blank" rel="noopener">有道词典2025年度词汇重磅发布</a>
+            <a href="https://mp.weixin.qq.com/s/hdC4ClMu264DTibVWMeAyQ" target="_blank" rel="noopener">从2011到2025：这些词，藏着每一年的中国互联网记忆</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="case">
+        <aside><div class="no">04</div><dl>
+          <dt><span class="en">Client</span><span class="zh">品牌</span></dt><dd>NetEase Youdao</dd>
+          <dt><span class="en">Year</span><span class="zh">时间</span></dt><dd>2025</dd>
+          <dt><span class="en">My role</span><span class="zh">我的角色</span></dt><dd><span class="en">Strategy, cross-team execution, data reviews</span><span class="zh">推广策略、跨部门执行、数据复盘</span></dd>
+        </dl></aside>
+        <div>
+          <h3><span class="en">Three launches for language learners</span><span class="zh">面向学习者的三场上市推广</span></h3>
+          <div class="tags"><span>Product launch</span><span>Cross-functional</span><span>Performance tracking</span></div>
+          <p><span class="en">The 2026 Youdao Quote Calendar, the launch of the Oxford 10 dictionary on Youdao, and the back-to-school promotion. For each I ran target-audience and competitor research, built the promotion plan around the launch moment, and worked with product and design on materials, media scheduling and post-campaign reviews. The Oxford launch leaned on the dictionary's authority to strengthen Youdao's credibility with serious learners.</span><span class="zh">2026 有道壹句日历、牛津 10 上线有道词典、开学季推广。每个项目我都做了目标人群与竞品调研，围绕营销节点制定推广策略，并跨部门对接产品与设计团队，协调物料制作、投放排期与效果复盘。牛津 10 项目借助权威背书，强化产品的学习属性。</span></p>
+          <div class="nums"><div><b>2,000+</b><small>calendars sold, week one</small></div><div><b>20M</b><small>Youdao AI interpretation users</small></div></div>
+          <div class="read">
+            <a href="https://mp.weixin.qq.com/s/BM3iPfhbMjvRlxG9wjvIsg" target="_blank" rel="noopener">2026有道壹句日历，如期赴约</a>
+            <a href="https://mp.weixin.qq.com/s/f6_ueEop3J5_LQqltZXtjg" target="_blank" rel="noopener">有道AI同传用户量突破2000万</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="photography" class="g">
+    <div class="wrap">
+      <div class="sh">
+        <div><span class="mono">02 · <span class="en">Photography</span><span class="zh">摄影</span></span><h2><span class="en">Photography</span><span class="zh">摄影作品</span></h2></div>
+        <p><span class="en">Forty-five frames in four series. Select any photograph to view it full screen; use the arrow keys to move through a series.</span><span class="zh">四个系列，共 45 张。点击照片可全屏浏览，支持方向键切换。</span></p>
+      </div>
+      <div class="chapters" id="chapters"></div>
+    </div>
+  </section>
+
+  <section id="film" class="g">
+    <div class="wrap">
+      <div class="sh">
+        <div><span class="mono">03 · <span class="en">Film &amp; Press</span><span class="zh">视频与发表</span></span><h2><span class="en">Film &amp; press</span><span class="zh">视频与发表作品</span></h2></div>
+        <p><span class="en">Video work, published journalism, and the articles written for brand channels.</span><span class="zh">视频作品、公开发表的新闻作品，以及为品牌撰写的推文。</span></p>
+      </div>
+      <div class="feature">
+        <img src="images/kt_18_event.jpg" alt="Chinese and Cambodian students holding flags on stage">
+        <div>
+          <span class="mono"><span class="en">Music video · China–Cambodia</span><span class="zh">音乐视频 · 中柬交流</span></span>
+          <h3>We Are the World</h3>
+          <p><span class="en">A choir music video made with Chinese and Cambodian university students. It was reshared on Facebook by Wang Wenbin, China's Ambassador to Cambodia.</span><span class="zh">中柬大学生合唱 MV，被中国驻柬埔寨大使汪文斌转载至个人 Facebook。</span></p>
+          <a href="https://www.facebook.com/share/v/17zXnmLw3W/" target="_blank" rel="noopener"><span class="en">Watch on Facebook ↗</span><span class="zh">在 Facebook 观看 ↗</span></a>
+        </div>
+      </div>
+      <div class="cols">
+        <div>
+          <h3 class="subh"><span class="en">Published journalism</span><span class="zh">新闻作品</span></h3>
+          <ul class="list">
+            <li><a href="https://s.cyol.com/articles/2024-11/25/content_Q4n4p6sW.html?gid=VDWQed1j" target="_blank" rel="noopener">北京：在浪漫的冬日氛围中度过闲暇时光</a><span class="mono">China Youth Online · 2024</span><p><span class="en">Photo story</span><span class="zh">摄影报道</span></p></li>
+            <li><a href="https://s.cyol.com/articles/2024-11/22/content_ajvN5PUz.html?gid=7ro6ez1y" target="_blank" rel="noopener">Weddings in the countryside of China</a><span class="mono">China Youth Online · 2024</span><p><span class="en">English translation</span><span class="zh">英文翻译</span></p></li>
+          </ul>
+          <h3 class="subh" style="margin-top:34px"><span class="en">Brand articles</span><span class="zh">品牌推文</span></h3>
+          <ul class="list">
+            <li><a href="https://mp.weixin.qq.com/s/mYBSx0lEuZ7lTURV0Aiu-A" target="_blank" rel="noopener">亮相戛纳｜可灵AI戛纳论坛精彩回顾</a><span class="mono">Kling AI</span></li>
+            <li><a href="https://mp.weixin.qq.com/s/Ga87oxWiSBrDY6otG727tA" target="_blank" rel="noopener">可灵AI三大创作赛事收官</a><span class="mono">Kling AI</span></li>
+            <li><a href="https://mp.weixin.qq.com/s/shaGLnW0jm7T6Fr4UKqYnQ" target="_blank" rel="noopener">有道词典2025年度词汇重磅发布</a><span class="mono">Youdao</span></li>
+            <li><a href="https://mp.weixin.qq.com/s/hdC4ClMu264DTibVWMeAyQ" target="_blank" rel="noopener">从2011到2025：这些词，藏着每一年的中国互联网记忆</a><span class="mono">Youdao</span></li>
+            <li><a href="https://mp.weixin.qq.com/s/BM3iPfhbMjvRlxG9wjvIsg" target="_blank" rel="noopener">2026有道壹句日历，如期赴约</a><span class="mono">Youdao</span></li>
+            <li><a href="https://mp.weixin.qq.com/s/f6_ueEop3J5_LQqltZXtjg" target="_blank" rel="noopener">有道AI同传用户量突破2000万</a><span class="mono">Youdao</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="subh"><span class="en">Short-form video</span><span class="zh">趣味短视频</span></h3>
+          <ul class="list">
+            <li><a href="https://www.xiaohongshu.com/explore/66a517dd000000002701236e?xsec_token=ABsE2TOEhDPEsXld77WrDPQgO6C82QO0TrX7Gu4wQsMyk=&amp;xsec_source=pc_search" target="_blank" rel="noopener">和姐妹去KTV一定要这么拍｜一镜到底歌曲MV</a><span class="mono">Xiaohongshu</span><p><span class="en">Single-take music video</span><span class="zh">一镜到底歌曲 MV</span></p></li>
+            <li><a href="https://www.xiaohongshu.com/explore/6840387300000000220247a1?xsec_token=ABY3sQDuL2vsT24NeTuSlP-1qB_0Ozx5Zw9E2AfhsdH64=&amp;xsec_source=pc_search" target="_blank" rel="noopener">留子的做饭风格是有卫生的懒</a><span class="mono">Xiaohongshu</span></li>
+          </ul>
+          <h3 class="subh" style="margin-top:34px"><span class="en">Vlogs</span><span class="zh">个人 Vlog</span></h3>
+          <ul class="list">
+            <li><a href="https://www.xiaohongshu.com/explore/676bcfd70000000009017e18?xsec_token=ABQJ3DSFBPQoVxpnYR0uJaxp-iK84Pwk7wjwaXmh042FI=&amp;xsec_source=pc_search" target="_blank" rel="noopener">积蓄四年的爱心，终于捐了自己的及腰长发</a><span class="mono">Xiaohongshu</span><p><span class="en">Donating four years of hair growth</span><span class="zh">公益捐发记录</span></p></li>
+            <li><a href="https://www.xiaohongshu.com/explore/68921801000000002302c3a3?xsec_token=AB5v6sSRuVgeIS0YE1K6H8amGcuoVYPiOPrQNjcFSqJfI=&amp;xsec_source=pc_search" target="_blank" rel="noopener">捡破烂是澳洲留子的宿命</a><span class="mono">Xiaohongshu · Sydney</span></li>
+            <li><a href="https://www.xiaohongshu.com/explore/681cad54000000002100ea71?xsec_token=ABVniAcT8eXGsyGnZa-oJaIpWsT3DbC-gLczcg8Nrwa24=&amp;xsec_source=pc_search" target="_blank" rel="noopener">英语终极考验之没有能笑着走出赛百味的留子</a><span class="mono">Xiaohongshu · Sydney</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="g">
+    <div class="wrap">
+      <div class="sh">
+        <div><span class="mono">04 · <span class="en">Experience</span><span class="zh">履历</span></span><h2><span class="en">Experience</span><span class="zh">履历</span></h2></div>
+        <p><span class="en">Internships, volunteering and education.</span><span class="zh">实习、志愿经历与教育背景。</span></p>
+      </div>
+      <div class="xp">
+        <div class="job">
+          <div><div class="when">Mar – Jul 2026</div><h3>Kuaishou — Kling AI</h3><div class="role"><span class="en">Brand Marketing Intern · Beijing</span><span class="zh">品牌市场实习生 · 北京</span></div></div>
+          <ul>
+            <li><span class="en">Took part in end-to-end execution of international brand events, including the official forum at the Cannes Film Market and an awards ceremony in Seoul.</span><span class="zh">深度参与戛纳电影市场官方论坛、首尔颁奖典礼等国际级品牌事件全链路执行。</span></li>
+            <li><span class="en">Planned the 4K Video Creation Contest from proposal to judging; 12,000+ submissions and 31 winning films screened overseas.</span><span class="zh">负责 4K 影像创作大赛整体策划，累计征稿 12000+，完成 31 支获奖作品海外展映。</span></li>
+            <li><span class="en">Ran full-cycle social content for the Cannes campaign (116 posts, 4.66M+ impressions, 49K+ engagements) and day-to-day brand content tied to new features.</span><span class="zh">落地戛纳项目全周期社媒运营（116 条内容，曝光 466.1 万+，互动 4.9 万+），并参与社媒矩阵日常运营。</span></li>
+            <li><span class="en">Produced competitor benchmarking and industry research to inform brand direction.</span><span class="zh">参与竞品对标与行业调研，输出分析报告支撑品牌传播方向。</span></li>
+          </ul>
+        </div>
+        <div class="job">
+          <div><div class="when">Sep – Dec 2025</div><h3>NetEase Youdao</h3><div class="role"><span class="en">Marketing &amp; Product Promotion Intern · Beijing</span><span class="zh">市场营销产品推广实习生 · 北京</span></div></div>
+          <ul>
+            <li><span class="en">Worked on four campaigns: back-to-school, Oxford 10 on Youdao, 2025 Word of the Year and the 2026 Quote Calendar.</span><span class="zh">主导开学季推广、牛津 10 上线有道词典、2025 有道词典年度词汇发布、2026 有道壹句日历四大项目。</span></li>
+            <li><span class="en">Developed Gen-Z creative directions with social and KOL amplification; Word of the Year reached 120M+ impressions.</span><span class="zh">结合 Z 世代偏好打造创意传播方向，联动社媒与 KOL 放大声量，年度词汇曝光达 1.2 亿。</span></li>
+            <li><span class="en">Tracked social trends and daily product data, adjusting promotion and writing data review reports.</span><span class="zh">实时追踪社交平台热点与产品数据，快速调整推广策略并输出复盘报告。</span></li>
+          </ul>
+        </div>
+        <div class="job">
+          <div><div class="when">Dec 2023 – Jan 2024</div><h3>Hunan TV</h3><div class="role"><span class="en">Director's Team Intern, Xiaomang 2024 New Year Gala · Changsha</span><span class="zh">小芒 2024 年礼节 · 导演组实习生 · 长沙</span></div></div>
+          <ul>
+            <li><span class="en">Supported programme design with competitive analysis of comparable galas and semi-structured audience interviews.</span><span class="zh">通过竞品分析与半结构式访谈参与晚会前期节目设计。</span></li>
+            <li><span class="en">Coordinated talent, lighting and stage, technical and props teams through every rehearsal.</span><span class="zh">跨部门对接艺人团队、灯光舞美、技术保障、道具等部门。</span></li>
+            <li><span class="en">Followed the interactive game segment from rehearsal to a zero-error live broadcast.</span><span class="zh">深度跟进互动游戏模块，确保直播环节零失误。</span></li>
+          </ul>
+        </div>
+        <div class="job">
+          <div><div class="when">Jan – Feb 2022</div><h3>Beijing 2022 Winter Olympics</h3><div class="role"><span class="en">Media Operations Volunteer, Zhangjiakou Mountain Media Centre</span><span class="zh">张家口山地新闻中心 · 媒体运行志愿者</span></div></div>
+          <ul>
+            <li><span class="en">Supported daily press workspace operations for domestic and international journalists.</span><span class="zh">保障新闻中心工作区日常运行，服务中外记者。</span></li>
+            <li><span class="en">Organised cultural activities in the media workspace; original artwork was featured by CCTV, Beijing TV and Zhangjiakou Daily.</span><span class="zh">组织媒体工作区文化活动，原创作品获央视、北京卫视、张家口日报报道。</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="edu" style="margin-top:44px">
+        <article><span class="mono">2024 – 2027</span><h3><span class="en">Renmin University of China</span><span class="zh">中国人民大学</span></h3><p><span class="en">M.A. Journalism &amp; Communication. Coursework in multimodal content production, audio and video production, and non-fiction writing.</span><span class="zh">新闻与传播硕士。主修课程：多模态内容制作、音视频制作、非虚构写作。</span></p><div class="gpa">3.96<small>/ 4.0 GPA</small></div></article>
+        <article><span class="mono">2025</span><h3><span class="en">University of Technology Sydney</span><span class="zh">悉尼科技大学</span></h3><p><span class="en">Exchange semester, January to July 2025.</span><span class="zh">交换生，2025 年 1 月至 7 月。</span></p></article>
+        <article><span class="mono">2020 – 2024</span><h3><span class="en">Renmin University of China</span><span class="zh">中国人民大学</span></h3><p><span class="en">B.A. Sociology, minor in Communication. Coursework in social research methods, visual technology and public communication.</span><span class="zh">社会学学士，辅修传播学。主修课程：社会研究方法、影像技术、公共传播。</span></p><div class="gpa">3.75<small>/ 4.0 GPA</small></div></article>
+      </div>
+
+      <div class="skills">
+        <div><h4><span class="en">Languages</span><span class="zh">语言</span></h4><p><span class="en">Mandarin (native). English: IELTS 7.0 (Reading 8.0), CET-6 614.</span><span class="zh">中文母语；英语雅思 7.0（阅读 8.0），六级 614。</span></p></div>
+        <div><h4><span class="en">Marketing</span><span class="zh">营销</span></h4><p><span class="en">Campaign planning, social media operations, KOL marketing, event marketing, competitive and audience research.</span><span class="zh">营销策划、社媒运营、KOL 营销、活动策划、竞品与用户研究。</span></p></div>
+        <div><h4><span class="en">Production</span><span class="zh">制作</span></h4><p><span class="en">Photography, video editing (CapCut, Final Cut Pro), Photoshop, copywriting.</span><span class="zh">摄影，视频剪辑（剪映、Final Cut Pro），PS，文案撰写。</span></p></div>
+        <div><h4><span class="en">Research</span><span class="zh">研究</span></h4><p><span class="en">Social research methods, semi-structured interviews, data analysis in Stata.</span><span class="zh">社会研究方法、半结构式访谈、Stata 数据分析。</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact g">
+    <div class="wrap ct">
+      <div>
+        <span class="mono" style="color:var(--edge)">05 · <span class="en">Contact</span><span class="zh">联系</span></span>
+        <h2><span class="en">Get in touch</span><span class="zh">联系我</span></h2>
+        <p class="ctp"><span class="en">Open to conversations about brand, content and communications roles.</span><span class="zh">欢迎交流品牌、内容与传播方向的工作机会。</span></p>
+      </div>
+      <dl class="cinfo">
+        <div><dt class="mono"><span class="en">Email</span><span class="zh">邮箱</span></dt><dd><span id="email">2635152056@qq.com</span><button class="btn" id="copy" type="button"><span class="en">Copy</span><span class="zh">复制</span></button></dd></div>
+        <div><dt class="mono"><span class="en">Based in</span><span class="zh">现居</span></dt><dd><span class="en">Beijing, China</span><span class="zh">中国北京</span></dd></div>
+        <div><dt class="mono"><span class="en">Languages</span><span class="zh">语言</span></dt><dd><span class="en">Mandarin · English</span><span class="zh">中文 · 英语</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <footer class="g mono"><div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;width:100%"><span>© 2026 Ketong Liu 刘珂彤</span><span><span class="en">All photographs by the author</span><span class="zh">所有照片均为本人拍摄</span></span></div></footer>
+</main>
+
+<div class="lb" id="lb" hidden>
+  <button class="x" id="lbx" type="button" aria-label="Close">×</button>
+  <button class="p" id="lbp" type="button" aria-label="Previous">‹</button>
+  <img id="lbimg" alt="">
+  <button class="n" id="lbn" type="button" aria-label="Next">›</button>
+  <div class="cap" id="lbcap"></div>
+</div>
+
+<script>
+const P=new Set([5,20,21,22,23,24,25,26,27,29,32,33,36,41,42]); const R34=new Set([29,32]);
+const SERIES=[
+ {k:"field",rn:"I",en:"Fieldwork",zh:"田野记录",n:[1,10],lead:4,ben:"Documentary work from the field: a market morning, roadside traders, a floating village, neighbours at dusk.",bzh:"田野中的纪实记录：清晨的集市、路边的商贩、水上村落、黄昏里的邻里。"},
+ {k:"event",rn:"II",en:"Events",zh:"活动拍摄",n:[11,19],lead:18,ben:"Student exchange programmes, sports days and cultural events, shot on assignment.",bzh:"学生交流项目、运动会与文化活动的现场拍摄。"},
+ {k:"portrait",rn:"III",en:"Portraits",zh:"人像摄影",n:[20,33],lead:31,ben:"Portraits of friends and classmates, from theme parks to city streets.",bzh:"为朋友和同学拍摄的人像，从主题乐园到城市街头。"},
+ {k:"travel",rn:"IV",en:"Places",zh:"风光人文",n:[34,45],lead:40,ben:"Sydney Harbour, coastlines, forests and night skies.",bzh:"悉尼港、海岸、森林与星空。"}
+];
+const pad=i=>String(i).padStart(2,"0");
+const ser=i=>SERIES.find(s=>i>=s.n[0]&&i<=s.n[1]);
+const src=(i,big)=>`images/kt_${pad(i)}_${ser(i).k}${big?"":"_s"}.jpg`;
+const ratio=i=>P.has(i)?(R34.has(i)?0.75:0.6667):1.5;
+let lang="en"; try{lang=localStorage.getItem("lang")||"en"}catch(e){}
+
+const chapters=document.getElementById("chapters");
+function render(){
+ chapters.innerHTML=SERIES.map(s=>{
+  const ids=[];for(let i=s.n[0];i<=s.n[1];i++)ids.push(i);
+  const rest=ids.filter(i=>i!==s.lead);
+  return `<div class="chap" id="series-${s.k}"><header><span class="rn">${s.rn}</span><h3>${lang==="zh"?s.zh:s.en}<small>${lang==="zh"?s.en:s.zh}</small></h3><span class="mono">${ids.length} ${lang==="zh"?"张":"frames"}</span><p>${lang==="zh"?s.bzh:s.ben}</p></header>
+   <figure class="lead" tabindex="0" data-i="${s.lead}"><img src="${src(s.lead,true)}" alt="${s.en} photograph KT ${pad(s.lead)}" loading="lazy"><figcaption>KT ${pad(s.lead)}</figcaption></figure>
+   <div class="just">${rest.map(i=>`<figure tabindex="0" data-i="${i}" style="--r:${ratio(i)}"><img src="${src(i)}" alt="${s.en} photograph KT ${pad(i)}" loading="lazy"><figcaption>KT ${pad(i)}</figcaption></figure>`).join("")}</div></div>`}).join("");
+ chapters.querySelectorAll("figure[data-i]").forEach(f=>{const i=+f.dataset.i;f.onclick=()=>open(i);f.onkeydown=e=>{if(e.key==="Enter")open(i)}});
+}
+const setLang=l=>{lang=l;document.documentElement.lang=l==="zh"?"zh":"en";document.getElementById("lang").textContent=l==="zh"?"EN":"中文";try{localStorage.setItem("lang",l)}catch(e){};render()};
+document.getElementById("lang").onclick=()=>setLang(lang==="zh"?"en":"zh");
+
+const lb=document.getElementById("lb"),lbimg=document.getElementById("lbimg"),lbcap=document.getElementById("lbcap");
+let list=[],pos=0;
+function show(){const i=list[pos],s=ser(i);lbimg.src=src(i,true);lbimg.alt=`KT ${pad(i)}`;lbcap.textContent=`KT ${pad(i)} · ${lang==="zh"?s.zh:s.en} · ${pos+1} / ${list.length}`}
+function open(i){const s=ser(i);list=[s.lead];for(let k=s.n[0];k<=s.n[1];k++)if(k!==s.lead)list.push(k);pos=list.indexOf(i);show();lb.hidden=false;document.getElementById("lbx").focus()}
+const close=()=>{lb.hidden=true};
+document.getElementById("lbx").onclick=close;
+document.getElementById("lbp").onclick=e=>{e.stopPropagation();pos=(pos-1+list.length)%list.length;show()};
+document.getElementById("lbn").onclick=e=>{e.stopPropagation();pos=(pos+1)%list.length;show()};
+lb.onclick=e=>{if(e.target===lb)close()};
+addEventListener("keydown",e=>{if(lb.hidden)return;if(e.key==="Escape")close();if(e.key==="ArrowLeft")document.getElementById("lbp").click();if(e.key==="ArrowRight")document.getElementById("lbn").click()});
+document.getElementById("copy").onclick=async()=>{const el=document.getElementById("email");try{await navigator.clipboard.writeText(el.textContent);document.getElementById("copy").textContent=lang==="zh"?"已复制":"Copied";setTimeout(()=>{document.getElementById("copy").innerHTML='<span class="en">Copy</span><span class="zh">复制</span>'},1800)}catch(e){const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r)}};
+setLang(lang);
+</script>
+
+</body>
+</html>
